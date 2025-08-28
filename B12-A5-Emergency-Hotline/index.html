@@ -161,7 +161,6 @@
      <nav>
         <div>
             <img src="assets/logo.png" alt="">
-            <strong>Emargency Service</strong>
         </div>
         <div>
             <span><img src="assets/heart.png"><span id="heart">0</span></span>
@@ -181,7 +180,7 @@
        <main>
         <section class="directory" id="cardContainer">
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -192,7 +191,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -203,7 +202,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -214,7 +213,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -225,7 +224,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -236,7 +235,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <span class="heart" onclick="increaseHeart(this)"></span>
                 <img src="assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
@@ -275,6 +274,26 @@
             document.getElementById('copyCount').innerText = copyCount;
             alert("Copied: " = number)
         }
+
+        function callNumber {(service, number)
+            if (coinCount < 20) {
+                alert('Not enough coins to make a call!');
+                return;
+            }
+            coinCount -= 20;
+            document.getElementById('coinCount').innerText = coinCount;
+            alert('Calling ${service} at ${number} ');
+
+            const historyList = document.getElementById('historyList');
+            const li = document.createElement("li");
+            const time = new Date().toLocaleTimeString();
+            li.textContent = ${service} (${number}) - ${time};
+            historyList.appendChild(li);
+        }
+
+        document.getElementById("clearHistory").addEventListener("click", () => {
+            document.getElementById("historyList").innerHTML = "";
+        });
        </script>
 </body>
 </html>
