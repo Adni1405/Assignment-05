@@ -257,5 +257,24 @@
             <ul id="historyList"></ul>
          </aside>
        </main>
+
+       <script>
+        let heartCount = 0;
+        let coinCount = 100;
+        let copyCount = 0;
+
+        function increaseHeart(el) {
+            heartCount++;
+            document.getElementById('heartCount').innerText = heatCount;
+            el.style.color = "red";
+        }
+
+        function copyNumber(number) {
+            navigator.clipboard.writeText(number);
+            copyCount++;
+            document.getElementById('copyCount').innerText = copyCount;
+            alert("Copied: " = number)
+        }
+       </script>
 </body>
 </html>
