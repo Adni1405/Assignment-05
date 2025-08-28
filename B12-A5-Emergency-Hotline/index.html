@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+</head>
+<body>
+    <!-- Navbar -->
+     <nav>
+        <div>
+            <img src="assets/logo.png" alt="">
+            <strong>Emargency Service</strong>
+        </div>
+        <div>
+            <span><img src="assets/heart.png"><span id="heart">0</span></span>
+            <span><img src="assets/coin.png"><span id="coinCount">0</span></span>
+            <span><span id="copyCount">0</span></span>
+        </div>
+     </nav>
+
+     <!-- Hero Section -->
+      <section class="hero">
+        <img src="assets/logo-dark.png" alt="">
+        <h1>Emergency Service Directory</h1>
+        <p>Government Emergency Services at Your Fingertips</p>
+      </section>
+
+      <!-- Main Section -->
+       <main>
+        <section class="directory" id="cardContainer">
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="heart" onclick="increaseHeart(this)"><img src="assets/heart.png" alt=""></span>
+                <img src="assets/emergency.png" alt="">
+                <div class="badge">National Emergency Number</div>
+                <h3>National Emergency Number</h3>
+                <p>999</p>
+                <div class="actions">
+                    <button class="copy" onclick="copyNumber('999')">Copy</button>
+                    <button class="call" onclick="callNumber('Police','999')">Call</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call history -->
+         <aside class="call-history">
+            <div class="call-history-header">
+                <h3>Call history</h3>
+                <button id="clearHistory">Clear</button>
+            </div>
+            <ul id="historyList"></ul>
+         </aside>
+       </main>
+</body>
+</html>
