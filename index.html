@@ -20,63 +20,63 @@
             background: #014421;
             color: #fff;
             padding: 15px 30px;
-            }
+        }
 
         .nav-left {
             display: flex;
             align-items: center;
             gap: 10px;
-            }
+        }
 
         .nav-left img {
             height: 40px;
-            }
+        }
 
         .nav-right {
             display: flex;
             align-items: center;
             gap: 20px;
             font-size: 14px;
-            }
+        }
 
         .nav-right span {
             cursor: pointer;
-            }
+        }
 
         .hero {
             background: linear-gradient(135deg, #014421, #02733d);
             text-align: center;
             color: #fff;
             padding: 50px 20px;
-            }
+        }
 
         .hero img {
             height: 80px;
-            }
+        }
 
         .hero h1 {
             margin: 20px 0 10px;
             font-size: 28px;
-            }
+        }
 
         .hero p {
             margin: 0;
             font-size: 16px;
-            }
+        }
 
         main {
             display: flex;
             justify-content: space-between;
             padding: 20px;
             flex-wrap: wrap;
-            }
+        }
 
         .directory {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             flex: 3;
-            }
+        }
 
         .card {
             background: #fff;
@@ -84,7 +84,7 @@
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;
-            }
+        }
 
         .card .heart {
             position: absolute;
@@ -93,11 +93,11 @@
             cursor: pointer;
             font-size: 18px;
             color: #999;
-            }
+        }
 
         .card img {
             color: #fff;
-            }
+        }
 
         .call-history {
             flex: 1;
@@ -107,20 +107,20 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             margin-left: 20px;
             min-width: 250px;
-            }
+        }
 
         .call-history-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            }
+        }
 
         .call-history h3 {
             margin: 0;
             display: flex;
             align-items: center;
             gap: 8px;
-            }
+        }
 
         #clearHistory {
             background: #dc3545;
@@ -130,48 +130,48 @@
             border-radius: 8px;
             cursor: pointer;
             margin-bottom: 10px;
-            }
+        }
 
         #historyList {
             list-style: none;
             padding: 0;
             max-height: 300px;
             overflow-y: auto;
-            }
+        }
 
         #historyList li {
             padding: 8px;
             border-bottom: 1px solid #ddd;
             font-size: 14px;
-            }
+        }
 
-            @media (max-width: 768px) {
-                main {
-                    flex-direction: column;
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
                 }
-                .call-history{
-                    margin-left: 0;
-                    margin-top: 20px;
+            .call-history{
+                margin-left: 0;
+                margin-top: 20px;
                 }
-            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
      <nav>
         <div>
-            <img src="assets/logo.png" alt="">
+            <img src="B12-A5-Emergency-Hotline/assets/logo.png" alt="">
         </div>
         <div>
-            <span><img src="assets/heart.png"><span id="heart">0</span></span>
-            <span><img src="assets/coin.png"><span id="coinCount">0</span></span>
+            <span><img src="B12-A5-Emergency-Hotline/assets/heart.png"><span id="heart">0</span></span>
+            <span><img src="B12-A5-Emergency-Hotline/assets/coin.png"><span id="coinCount">0</span></span>
             <span><span id="copyCount">0</span></span>
         </div>
      </nav>
 
      <!-- Hero Section -->
       <section class="hero">
-        <img src="assets/logo-dark.png" alt="">
+        <img src="B12-A5-Emergency-Hotline/assets/logo-dark.png" alt="">
         <h1>Emergency Service Directory</h1>
         <p>Government Emergency Services at Your Fingertips</p>
       </section>
@@ -181,7 +181,7 @@
         <section class="directory" id="cardContainer">
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
@@ -192,7 +192,7 @@
             </div>
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
@@ -203,7 +203,7 @@
             </div>
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
@@ -214,7 +214,7 @@
             </div>
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
@@ -225,7 +225,7 @@
             </div>
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
@@ -236,7 +236,7 @@
             </div>
             <div class="card">
                 <span class="heart" onclick="increaseHeart(this)"></span>
-                <img src="assets/emergency.png" alt="">
+                <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
                 <div class="badge">National Emergency Number</div>
                 <h3>National Emergency Number</h3>
                 <p>999</p>
